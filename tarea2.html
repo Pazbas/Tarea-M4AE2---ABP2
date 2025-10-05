@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarea M4AE2 - ABP2</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="icon" href="/assets/img/otros/logo.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Subsidio de arriendo de vivienda</h1>
+  <h2>Formulario de Postulación a Subsidio</h2>
+
+  <form id="subsidioForm">
+   
+    <label>Nacionalidad:
+      <select id="nacionalidad" required>
+        <option value="chilena">Chilena</option>
+        <option value="extranjera">Extranjera</option>
+      </select>
+    </label><br><br>
+
+ 
+    <label>¿Tiene cédula vigente?
+      <select id="cedulaVigente" required>
+        <option value="si">Sí</option>
+        <option value="no">No</option>
+      </select>
+    </label><br><br>
+
+  
+    <label>Edad (años):
+      <input type="number" id="edad" min="0" required>
+    </label><br><br>
+
+
+    <label>Puntaje Registro Social de Hogares (0 a 100):
+      <input type="number" id="vulnerabilidad" min="0" max="100" required>
+    </label><br><br>
+
+    <label>Ahorro en UF:
+      <input type="number" id="ahorro" step="0.01" min="0" required>
+    </label><br><br>
+
+ 
+    <label>Ahorro a nombre de:
+      <select id="ahorroNombre" required>
+        <option value="titular">Titular</option>
+        <option value="conyuge">Cónyuge</option>
+        <option value="conviviente">Conviviente</option>
+        <option value="otro">Otro</option>
+      </select>
+    </label><br><br>
+
+    <button type="submit">Verificar Postulación</button>
+  </form>
+
+  <h3 id="resultado" style="margin-top: 20px;"></h3>
+
+  <script>
+ 
+  </script>
+
+
+  <br>
+    <a class="categories__button btn btn-outline-primary me-md-2" a href="/index.html" role="button">Atrás</a>
+    <script src="/assets/js/scripts.js"></script>
+</body>
+</html>
+
+</html>
